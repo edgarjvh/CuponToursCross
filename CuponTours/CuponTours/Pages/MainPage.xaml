@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             x:Class="CuponTours.Pages.MainPage"
+             Title="Bienvenidos"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+
+    <RelativeLayout Padding="0"
+                    HorizontalOptions="Center">
+        <!-- Background -->
+        <Image            
+            Aspect="AspectFill"
+            Source="MainPageBg.png"
+            RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"             
+            RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}"></Image>
+        
+        <StackLayout
+            RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+            HorizontalOptions="Center">
+
+            <Image
+                Source="Logo.png"
+                WidthRequest="300"></Image>
+
+            <StackLayout
+                Orientation="Horizontal"
+                RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+
+                <Grid                        
+                        BackgroundColor="Transparent"
+                        ColumnSpacing="5"
+                        Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button
+                        HeightRequest="80"
+                        BackgroundColor="{StaticResource MainColor}"
+                        Image="menu_icon_about"
+                        BorderRadius="15"
+                        Text="Quienes Somos"
+                        TextColor="White"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="Center"
+                        ContentLayout="Top,0"
+                        Command="{Binding GoToCommand}"
+                        CommandParameter="AboutPage"></Button>
+
+                    <Button
+                        HeightRequest="80"
+                        Grid.Column="1"
+                        BackgroundColor="{StaticResource MainColor}"
+                        Image="menu_icon_reservation"
+                        BorderRadius="15"
+                        Text="Reservaciones"
+                        TextColor="White"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="Center"
+                        ContentLayout="Top,0"
+                        Command="{Binding GoToCommand}"
+                        CommandParameter="ReservationsPage"></Button>
+                </Grid>
+
+                
+            </StackLayout>
+        </StackLayout>
+    </RelativeLayout>
+</ContentPage>

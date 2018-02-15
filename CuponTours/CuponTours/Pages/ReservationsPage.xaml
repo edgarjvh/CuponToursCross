@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CuponTours.Pages.ReservationsPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Reservaciones"
+             BackgroundColor="{StaticResource AccentColor2}">
+
+    <ScrollView>
+        <StackLayout
+            Padding="10">
+
+            <Label
+                Text="Confirmar Reservación"
+                TextColor="{StaticResource FontColor}"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Margin="0,0,0,10"/>
+
+            <Label
+                Text="Si ya compraste tu paquete con nosotros, ahora puedes reservar tu fecha de viaje. Sólo con ingresar tus datos aquí. (Las fechas están sujetas a disponibilidad)"
+                TextColor="{StaticResource FontColor}"            
+                HorizontalOptions="Center"
+                FontSize="16"
+                Margin="0,0,0,20"/>
+            
+            <Label 
+                Text="Nombre y Apellido del Titular del Paquete"
+                FontSize="12"
+                HorizontalOptions="StartAndExpand"
+                TextColor="{StaticResource FontColor}"
+                FontAttributes="Italic"/>
+
+            <Entry 
+                x:Name="txtName"            
+                HorizontalOptions="Fill"
+                BackgroundColor="White"
+                TextColor="{StaticResource FontColor}"/>
+
+            <Label 
+                Text="Correo Electrónico"
+                FontSize="12"
+                HorizontalOptions="StartAndExpand"
+                TextColor="{StaticResource FontColor}"
+                FontAttributes="Italic"/>
+
+            <Entry 
+                x:Name="txtEmail"            
+                HorizontalOptions="Fill"
+                BackgroundColor="White"
+                TextColor="{StaticResource FontColor}"/>
+
+            <Label 
+                Text="Destino 1"
+                FontSize="12"
+                HorizontalOptions="StartAndExpand"
+                TextColor="{StaticResource FontColor}"
+                FontAttributes="Italic"/>
+
+            <Editor 
+                x:Name="txtDestination1"            
+                HorizontalOptions="Fill"
+                BackgroundColor="White"
+                TextColor="{StaticResource FontColor}"/>
+
+            <Label 
+                Text="Destino 2"
+                FontSize="12"
+                HorizontalOptions="StartAndExpand"
+                TextColor="{StaticResource FontColor}"
+                FontAttributes="Italic"/>
+
+            <Editor 
+                x:Name="txtDestination2"            
+                HorizontalOptions="Fill"
+                BackgroundColor="White"
+                TextColor="{StaticResource FontColor}"/>
+
+            <Label 
+                Text="Destino 3"
+                FontSize="12"
+                HorizontalOptions="StartAndExpand"
+                TextColor="{StaticResource FontColor}"
+                FontAttributes="Italic"/>
+
+            <Editor 
+                x:Name="txtDestination3"            
+                HorizontalOptions="Fill"
+                BackgroundColor="White"
+                TextColor="{StaticResource FontColor}"/>
+
+            <Button
+                x:Name="btnSubmit"
+                Text="Enviar"
+                HorizontalOptions="Fill"
+                BackgroundColor="{StaticResource MainColor}"
+                TextColor="White"
+                BorderRadius="10"></Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

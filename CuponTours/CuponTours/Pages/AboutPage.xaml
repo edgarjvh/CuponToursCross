@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CuponTours.Pages.AboutPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Quienes Somos"
+             BackgroundColor="{StaticResource BackgroundColor}">
+    
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="ABOUT PAGE" TextColor="Black" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

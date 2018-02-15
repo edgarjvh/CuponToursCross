@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CuponTours.Pages.SharePage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Comparte tu Vacación"
+             BackgroundColor="{StaticResource BackgroundColor}">
+
+    <RelativeLayout Padding="0"
+                    HorizontalOptions="Center">
+        <!-- Background -->
+        <Image            
+            Aspect="AspectFill"
+            Source="share_page_bg.png"
+            RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"             
+            RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}"></Image>
+
+        <ScrollView>
+            <StackLayout
+                RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+                HorizontalOptions="Center">
+
+                <Image
+                    Source="icon_vacation.png"
+                    WidthRequest="120"
+                    HeightRequest="120"></Image>
+
+                <Label
+                    Text="Envíanos tus momentos más felices de tus vacaciones."
+                    TextColor="{StaticResource FontColor}"
+                    HorizontalOptions="Center"
+                    FontSize="14"></Label>
+
+                <Label
+                    Text="Nos encantaría compartirlas en nuestras redes sociales."
+                    TextColor="{StaticResource FontColor}"
+                    HorizontalOptions="Center"
+                    FontSize="14"></Label>
+
+                <Button
+                    x:Name="btnSubmit"
+                    Text="Envíenos su foto"
+                    HorizontalOptions="Fill"
+                    BackgroundColor="{StaticResource MainColor}"
+                    TextColor="White"
+                    BorderRadius="10"></Button>
+            </StackLayout>
+        </ScrollView>
+    </RelativeLayout>
+</ContentPage>
