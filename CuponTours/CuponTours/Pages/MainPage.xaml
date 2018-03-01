@@ -20,7 +20,7 @@
             HorizontalOptions="Center">
 
             <Image
-                Source="Logo.png"
+                Source="logo.png"
                 WidthRequest="300"></Image>
 
             <StackLayout

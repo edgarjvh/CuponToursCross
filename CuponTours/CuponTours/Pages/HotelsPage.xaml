@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CuponTours.Pages.HotelsPage"
+             Title="Hoteles"
+             BackgroundColor="{StaticResource AccentColor2}"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+
+    <RelativeLayout
+        Padding="0"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand">
+
+        <Image            
+            Aspect="AspectFill"
+            Source="MainPageBg.png"
+            RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"             
+            RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}"></Image>
+
+        <StackLayout
+            RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+            HorizontalOptions="Center">
+            
+            <ScrollView>
+                <StackLayout>
+                    <Grid
+                    x:Name="gridHotels"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"            
+                    Padding="15"
+                    ColumnSpacing="15"
+                    RowSpacing="15">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Button
+                        x:Name="btnHotel1"
+                        Text="Hotel 1"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        WidthRequest="150"
+                        HeightRequest="150"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        BorderRadius="10"
+                        BorderColor="{StaticResource AccentColor1}"
+                        BorderWidth="8"
+                        BackgroundColor="{StaticResource MainColor}"
+                        FontAttributes="Bold"/>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </RelativeLayout>    
+</ContentPage>

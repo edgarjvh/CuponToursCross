@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CuponTours.Pages.EarnPage"
-             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             x:Class="CuponTours.Pages.EarnPage"             
              Title="Refiere y Gana"
-             BackgroundColor="{StaticResource BackgroundColor}">
+             BackgroundColor="{StaticResource AccentColor2}">
 
     <ScrollView>
         <StackLayout
@@ -27,52 +26,32 @@
                 Margin="0,0,0,20"/>
 
             <StackLayout>
-                
                 <Label 
-                    Text="Nombre de Usuario"
+                    Text="Correo Electrónico"
                     FontSize="12"
                     HorizontalOptions="StartAndExpand"
                     TextColor="{StaticResource FontColor}"
                     FontAttributes="Italic"/>
 
                 <Entry 
-                    x:Name="txtUsername"            
+                    x:Name="txtEmail"            
                     HorizontalOptions="Fill"
                     BackgroundColor="White"
                     TextColor="{StaticResource FontColor}"/>
+                
+                <Label 
+                    Text="Nombre"
+                    FontSize="12"
+                    HorizontalOptions="StartAndExpand"
+                    TextColor="{StaticResource FontColor}"
+                    FontAttributes="Italic"/>
 
-                <StackLayout Orientation="Horizontal">
-                    <StackLayout HorizontalOptions="FillAndExpand">
-                        <Label 
-                            Text="Nombre"
-                            FontSize="12"
-                            HorizontalOptions="StartAndExpand"
-                            TextColor="{StaticResource FontColor}"
-                            FontAttributes="Italic"/>
-
-                        <Entry 
-                            x:Name="txtFirstName"            
-                            HorizontalOptions="Fill"
-                            BackgroundColor="White"
-                            TextColor="{StaticResource FontColor}"/>
-                    </StackLayout>
-
-                    <StackLayout HorizontalOptions="FillAndExpand">
-                        <Label 
-                            Text="Apellido"
-                            FontSize="12"
-                            HorizontalOptions="StartAndExpand"
-                            TextColor="{StaticResource FontColor}"
-                            FontAttributes="Italic"/>
-
-                        <Entry 
-                            x:Name="txtLastName"            
-                            HorizontalOptions="Fill"
-                            BackgroundColor="White"
-                            TextColor="{StaticResource FontColor}"/>
-                    </StackLayout>
-                </StackLayout>
-
+                <Entry 
+                    x:Name="txtName"            
+                    HorizontalOptions="Fill"
+                    BackgroundColor="White"
+                    TextColor="{StaticResource FontColor}"/>
+                
                 <Label 
                     Text="Teléfono"
                     FontSize="12"
@@ -86,30 +65,24 @@
                     BackgroundColor="White"
                     TextColor="{StaticResource FontColor}"/>
 
-                <Label 
-                    Text="Correo Electrónico"
-                    FontSize="12"
-                    HorizontalOptions="StartAndExpand"
-                    TextColor="{StaticResource FontColor}"
-                    FontAttributes="Italic"/>
-
-                <Entry 
-                    x:Name="txtEmail"            
-                    HorizontalOptions="Fill"
-                    BackgroundColor="White"
-                    TextColor="{StaticResource FontColor}"/>
+                
             </StackLayout>
 
             <StackLayout 
                 x:Name="referralList"
-                HorizontalOptions="Fill"></StackLayout>
+                HorizontalOptions="Fill"
+                BackgroundColor="{StaticResource AccentColor2}"
+                Margin="0,20,0,20"
+                Spacing="5">
+                
+            </StackLayout>
 
             <Button
                 x:Name="btnAdd"
                 Text="Agregar"
                 HorizontalOptions="Fill"
                 BackgroundColor="{StaticResource AccentColor2}"
-                TextColor="White"
+                TextColor="Black"
                 BorderRadius="10"></Button>
 
             <Button

@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CuponTours.Pages.ReservationsPage"
-             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             x:Class="CuponTours.Pages.ReservationsPage"             
              Title="Reservaciones"
              BackgroundColor="{StaticResource AccentColor2}">
-
+    <!--BindingContext="{Binding Main, Source={StaticResource Locator}}"-->
     <ScrollView>
         <StackLayout
             Padding="10">

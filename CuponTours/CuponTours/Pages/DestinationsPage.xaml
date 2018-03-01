@@ -1,14 +1,116 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CuponTours.Pages.DestinationsPage"
-             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             x:Class="CuponTours.Pages.DestinationsPage"             
              Title="Destinos"
-             BackgroundColor="{StaticResource BackgroundColor}">
+             BackgroundColor="{StaticResource AccentColor2}"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
 
-    <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="DESTINOS" TextColor="Black" />
-        </StackLayout>
-    </ContentPage.Content>
+    <RelativeLayout
+        Padding="0"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand">
+
+        <Image            
+            Aspect="AspectFill"
+            Source="MainPageBg.png"
+            RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"             
+            RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}"></Image>
+
+        <StackLayout
+            RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+            HorizontalOptions="Center">
+
+            <Label
+                Text="Destinos y Paquetes Vacacionales"
+                TextColor="{StaticResource FontColor}"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Margin="0,50,0,0"/>
+
+            <ScrollView
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+
+                <Grid
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"
+            
+                    Padding="15"
+                    ColumnSpacing="15"
+                    RowSpacing="15">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button
+                        x:Name="btnDestinations"
+                        Text="Destinos"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        WidthRequest="150"
+                        HeightRequest="150"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        BorderRadius="10"
+                        BorderColor="{StaticResource AccentColor1}"
+                        BorderWidth="8"
+                        BackgroundColor="{StaticResource MainColor}"
+                        FontAttributes="Bold"/>
+
+                    <Button
+                        x:Name="btnCruiser"
+                        Text="Cruceros"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        WidthRequest="150"
+                        HeightRequest="150"
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        BorderRadius="10"
+                        BorderColor="{StaticResource AccentColor1}"
+                        BorderWidth="8"
+                        BackgroundColor="{StaticResource MainColor}"
+                        FontAttributes="Bold"/>
+
+                    <Button
+                        x:Name="btnCarRent"
+                        Text="Alquila tu Vehículo"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        WidthRequest="150"
+                        HeightRequest="150"
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        BorderRadius="10"
+                        BorderColor="{StaticResource AccentColor1}"
+                        BorderWidth="8"
+                        BackgroundColor="{StaticResource MainColor}"
+                        FontAttributes="Bold"/>
+
+                    <Button
+                        x:Name="btnHotels"
+                        Text="Hoteles"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        WidthRequest="150"
+                        HeightRequest="150"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        BorderRadius="10"
+                        BorderColor="{StaticResource AccentColor1}"
+                        BorderWidth="8"
+                        BackgroundColor="{StaticResource MainColor}"
+                        FontAttributes="Bold"
+                        Command="{Binding GoToCommand}"
+                        CommandParameter="HotelsPage"/>
+                </Grid>
+            </ScrollView>            
+        </StackLayout>        
+    </RelativeLayout>    
 </ContentPage>
+
+<!-- BindingContext="{Binding Main, Source={StaticResource Locator}}" -->

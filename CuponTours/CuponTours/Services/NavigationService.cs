@@ -58,6 +58,9 @@ namespace CuponTours.Services
                 case "ReservationsPage":
                     await Navigate(new ReservationsPage());
                     break;
+                case "HotelsPage":
+                    await Navigate(new HotelsPage());
+                    break;
                 default:
                     break;
             }
