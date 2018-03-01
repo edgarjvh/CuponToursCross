@@ -40,7 +40,7 @@
                     <Button
                         HeightRequest="80"
                         BackgroundColor="{StaticResource MainColor}"
-                        Image="menu_icon_about"
+                        Image="menu_icon_about.png"
                         BorderRadius="15"
                         Text="Quienes Somos"
                         TextColor="White"
@@ -54,7 +54,7 @@
                         HeightRequest="80"
                         Grid.Column="1"
                         BackgroundColor="{StaticResource MainColor}"
-                        Image="menu_icon_reservation"
+                        Image="menu_icon_reservation.png"
                         BorderRadius="15"
                         Text="Reservaciones"
                         TextColor="White"

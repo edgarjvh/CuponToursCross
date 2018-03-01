@@ -9,9 +9,9 @@
     <ScrollView>
         <StackLayout
             Padding="10">
-
+ 
             <Label
-                Text="Refiere a 5 amigos y viaja GRATIS!"
+                Text="Refiere a 5 amigos y viaja GRATIS!" 
                 TextColor="{StaticResource FontColor}"
                 FontAttributes="Bold"
                 FontSize="20"
@@ -26,8 +26,7 @@
                 FontSize="16"
                 Margin="0,0,0,20"/>
 
-            <StackLayout
-                BackgroundColor="{StaticResource AccentColor1}">
+            <StackLayout>
                 
                 <Label 
                     Text="Nombre de Usuario"
@@ -37,7 +36,7 @@
                     FontAttributes="Italic"/>
 
                 <Entry 
-                    x:Name="txtUsername1"            
+                    x:Name="txtUsername"            
                     HorizontalOptions="Fill"
                     BackgroundColor="White"
                     TextColor="{StaticResource FontColor}"/>
@@ -52,7 +51,7 @@
                             FontAttributes="Italic"/>
 
                         <Entry 
-                            x:Name="txtFirstName1"            
+                            x:Name="txtFirstName"            
                             HorizontalOptions="Fill"
                             BackgroundColor="White"
                             TextColor="{StaticResource FontColor}"/>
@@ -67,7 +66,7 @@
                             FontAttributes="Italic"/>
 
                         <Entry 
-                            x:Name="txtLastName1"            
+                            x:Name="txtLastName"            
                             HorizontalOptions="Fill"
                             BackgroundColor="White"
                             TextColor="{StaticResource FontColor}"/>
@@ -82,7 +81,7 @@
                     FontAttributes="Italic"/>
 
                 <Entry 
-                    x:Name="txtPhone1"            
+                    x:Name="txtPhone"            
                     HorizontalOptions="Fill"
                     BackgroundColor="White"
                     TextColor="{StaticResource FontColor}"/>
@@ -95,13 +94,23 @@
                     FontAttributes="Italic"/>
 
                 <Entry 
-                    x:Name="txtEmail1"            
+                    x:Name="txtEmail"            
                     HorizontalOptions="Fill"
                     BackgroundColor="White"
                     TextColor="{StaticResource FontColor}"/>
             </StackLayout>
 
-            
+            <StackLayout 
+                x:Name="referralList"
+                HorizontalOptions="Fill"></StackLayout>
+
+            <Button
+                x:Name="btnAdd"
+                Text="Agregar"
+                HorizontalOptions="Fill"
+                BackgroundColor="{StaticResource AccentColor2}"
+                TextColor="White"
+                BorderRadius="10"></Button>
 
             <Button
                 x:Name="btnSubmit"

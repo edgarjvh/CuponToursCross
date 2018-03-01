@@ -43,84 +43,84 @@ namespace CuponTours.ViewModels
             {
                 new MenuItemViewModel()
                 {
-                    Icon = "menu_icon_home",
+                    Icon = "menu_icon_home.png",
                     Title = "Inicio",
                     PageName = "MainPage"
                 },
 
                 new MenuItemViewModel()
                 {
-                    Icon = "menu_icon_gallery",
+                    Icon = "menu_icon_gallery.png",
                     Title = "Galería",
                     PageName = "GalleryPage"
                 },
 
                 new MenuItemViewModel()
                 {
-                    Icon = "menu_icon_earn",
+                    Icon = "menu_icon_earn.png",
                     Title = "Refiere y Gana",
                     PageName = "EarnPage"
                 },
 
                 new MenuItemViewModel()
                 {
-                    Icon = "menu_icon_share",
+                    Icon = "menu_icon_share.png",
                     Title = "Comparte",
                     PageName = "SharePage"
                 },
 
                 new MenuItemViewModel()
                 {
-                    Icon = "menu_icon_alerts",
+                    Icon = "menu_icon_alerts.png",
                     Title = "Alertas",
                     PageName = "AlertsPage"
                 },
 
                 new MenuItemViewModel()
                 {
-                    Icon = "menu_icon_follow_us",
+                    Icon = "menu_icon_follow_us.png",
                     Title = "Síguenos",
                     PageName = "FollowUsPage"
                 },
 
                 new MenuItemViewModel()
                 {
-                    Icon = "menu_icon_destinations",
+                    Icon = "menu_icon_destinations.png",
                     Title = "Destinos",
                     PageName = "DestinationsPage"
                 },
 
                 new MenuItemViewModel()
                 {
-                    Icon = "menu_icon_chat",
+                    Icon = "menu_icon_chat.png",
                     Title = "Chat Online",
                     PageName = "ChatPage"
                 },
 
                 new MenuItemViewModel()
                 {
-                    Icon = "menu_icon_comments",
+                    Icon = "menu_icon_comments.png",
                     Title = "Comentarios",
                     PageName = "CommentsPage"
                 },
 
                 new MenuItemViewModel()
                 {
-                    Icon = "menu_icon_videos",
+                    Icon = "menu_icon_videos.png",
                     Title = "Videos",
                     PageName = "VideosPage"
                 },
 
                 new MenuItemViewModel()
                 {
-                    Icon = "menu_icon_restaurant",
+                    Icon = "menu_icon_restaurant.png",
                     Title = "Restaurantes",
                     PageName = "RestaurantPage"
                 },
 
                 new MenuItemViewModel()
                 {
-                    Icon = "menu_icon_translator",
+                    Icon = "menu_icon_translator.png",
                     Title = "Traductor",
                     PageName = "TranslatorPage"
                 }
